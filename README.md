@@ -1,4 +1,4 @@
-# E-Commerce Portfolio
+# World Bank Portfolio
 
 <dl>
 <dt>Course Name</dt>
@@ -13,9 +13,7 @@
 
 * * *
 
-> A step towards better e-commerce management
->
-> PH
+> A step towards better management in Banks
 
 #### Note:
 This page hosts:
