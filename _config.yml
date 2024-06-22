@@ -1,1 +1,5 @@
-theme: slate
+title: World Bank
+description: Algorithms for Better Banking.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-slate
