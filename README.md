@@ -1,4 +1,4 @@
-# World Bank Portfolio
+# Visa card
 
 <dl>
 <dt>Course Name</dt>
@@ -13,7 +13,7 @@
 
 * * *
 
-> A step towards better management in Banks
+> A step towards better management in digital payments
 
 #### Note:
 This page hosts:
