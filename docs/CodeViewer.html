@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Display</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/cpp.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <h3>Visa Card Portfolio</h3>
+    </header>
+    <main>
+        <h1>Code</h1>
+        <pre><code class="cpp" id="code-block"></code></pre>
+    </main>
+    <footer>
+        <p>aps-portfolio maintained by <a style="color: white;"
+                href="https://github.com/Indudhar-GJ/aps-portfolio">Indudhar-GJ</a></p>
+    </footer>
+    <script>
+        function getQueryParam(param) {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        let fileName = getQueryParam('file');
+        if (fileName) {
+            fetch(fileName)
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('code-block').textContent = text;
+                    hljs.highlightElement(document.getElementById('code-block'));
+                    hljs.lineNumbersBlock(document.getElementById('code-block'));
+                });
+        } else {
+            document.getElementById('code-block').textContent = 'No file specified';
+        }
+    </script>
+</body>
+
+</html>

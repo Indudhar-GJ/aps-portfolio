@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/cpp.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
@@ -40,23 +44,34 @@
                     and
                     convenient access to your money in person, online, overseas and over the phone.It issues credit
                     card,debit card
-                    and pre-paid cards which helps customers to make cashless payments.
+                    and pre-paid cards which helps customers to make cashless payments. It has also gained trust of user
+                    through decreasing the number of faulty payments ,also it provides instant transfer of funds into
+                    the bank accounts. Visa also give offers and rewards on specific payments which helps attract
+                    customers and give cashbacks to them.
                 </p>
+                <img class="introimg" src="./1_hqCpaAV9Tfh5AkLaM7bNAA-Photoroom.png" alt="">
             </div>
             <div>
                 <h1>Why Portfolio?</h1>
-                <p>pass</p>
+                <p>This portfolio demonstrats how various algorithms can be implement in the domain of digital payments
+                    to ease the process and increase customer satisfaction and also generate more profit for the company
+                    by analyzing specific patterns and also increase security. Applying these advanced algorithms and
+                    data structures could help a company to easily analyze data and take actions accordingly in
+                    real-time.</p>
             </div>
             <div>
                 <h1>Objectives</h1>
                 <p>The objectives of this portfolio are : </p>
                 <li>Applying the algorithmic solution to real-world scenarios to improve the user experience.</li>
                 <li>Demonstrating expertise in algorithmic problem-solving within the realm of digital payment.</li>
-                <li>Applying the algorithmic solution to real-world scenarios to improve the user experience.</li>
+                <li>Understand the intuition behind algorithms.</li>
+                <li>Know the importance of time complexity in real-world.</li>
             </div>
+            <img style="margin: 18px auto;" src="../docs/Screenshot 2024-07-08 233237.png" alt="">
             <div class="functions">
-                <h1>Functionality</h1>
+                <h1>Business use cases</h1>
                 <ul>
+
                     <li>
                         <h3>1. Detecting high volume transation clusters.</h3>
                         <p>Data Structure/Algorithm used : Graph</p>
@@ -64,9 +79,16 @@
                             high transaction volumes among them.Using graph data structures, where nodes represent
                             accounts and edges represent transactions. Algorithms like Depth-First Search (DFS) can be
                             used to detect cycles and high volume transaction patterns.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <p>Challenges : Need to build the graph first ,which takes lot of time and storage. </p>
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Graph Algorithms for Fraud Detection Networks.cpp'"><a>View
+                                Code</a></button>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Graph%20Algorithms%20for%20Fraud%20Detection%20Networks.cpp">View
+                                Code</a></button> -->
+
+                        <p>Time Complexity : O(V+E)</p>
+                        <p>Space Complexity : O(V+E) </p>
                     </li>
                     <li>
                         <h3>2. Faster retrieval of transaction details.</h3>
@@ -76,9 +98,16 @@
                             details
                             as values in a hash table, allowing O(1) average time complexity for lookups.Hence
                             reduces the time required to access critical data, enhancing customer service.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <p>Challenges : Need to handle collisions , may take more space inorder to handle the
+                            collisions.</p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/HashTablesforFastLookup.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/HashTablesforFastLookup.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N) </p>
+                        <p>Space Complexity : O(N) </p>
                     </li>
                     <li>
                         <h3>3. Retrieval of the data related to a specific card numbers</h3>
@@ -88,78 +117,119 @@
                             for faster lookup and prefix matching, which can be used in validating card numbers and
                             detecting invalid card entries.It improves the speed and accuracy of validating card
                             transactions.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <p>Challenges : Requires a lot of memory</p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Trie%20Data%20Structure%20for%20Secure%20Payment%20Processing.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Trie Data Structure for Secure Payment Processing.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N)</p>
+                        <p>Space Complexity : O(N) </p>
                     </li>
                     <li>
                         <h3>4. Faster retrieval of transaction records in sorted order</h3>
                         <p>Data Structure/Algorithm used : Radix Tree</p>
                         <p>Using Radix Tree we can perform faster insertion, deletion, and lookup of
-                            transactions details. Also we can use a BST to maintain a sorted list of transactions based
+                            transactions details. Also we can use a Radix to maintain a sorted list of transactions
+                            based
                             on transaction time or amount, enabling efficient retrieval and updates.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Radix%20tree.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N*K) </p>
+                        <p>Space Complexity : O(N+K) </p>
                     </li>
                     <li>
                         <h3>5. Searching for a account details using name of card holder</h3>
                         <p>Data Structure/Algorithm used : Knuth-Morris-Pratt algorithm</p>
-                        <p>Using Knuth-Morris-Pratt (KMP) algorithm for fast pattern matching in strings.
-                            We can use the KMP algorithm to search for specific account in transactions/database to
+                        <p> Visa is a huge company and has a large database and if it want to search for a specific
+                            account/user/transaction it would take a lot of time.So we can use Knuth-Morris-Pratt (KMP)
+                            algorithm for fast pattern matching in strings.
+                            We can use the KMP algorithm to search for specific account in transactions/database and
                             retreive the information.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <p>Challenges : The preprocessing of data is required. </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Knuth-Morris-Pratt%20(KMP)%20Algorithm%20for%20Efficient%20String%20Matching.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Knuth-Morris-Pratt (KMP) Algorithm for Efficient String Matching.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N) </p>
+                        <p>Space Complexity : O(M) </p>
                     </li>
                     <li>
                         <h3>6. Kadane's Algorithm for Maximum Subarray Sum</h3>
                         <p>Data Structure/Algorithm used : Kadane's Algorithm</p>
-                        <p>Visa can use Kadane's algorithm to detect periods of high spending in transaction data.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <p>Visa can use Kadane's algorithm to detect periods of high spending in transaction data snd
+                            with the help of this Visa can rent out more servers before hand ,so that transaction do not
+                            get delayed in those peak time.</p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Kadane's%20Algorithm%20for%20Maximum%20Subarray%20Sum.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Kadane`s Algorithm for Maximum Subarray Sum.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N) </p>
+                        <p>Space Complexity : O(1) </p>
                     </li>
                     <li>
-                        <h3>7. Manage server load</h3>
-                        <p>Data Structure/Algorithm used : Kadane's Algorithm</p>
-                        <p>Find from what time to what time do the most number of transactions happen using Kadane's
-                            Algorithm so that you can optimize the servers to handle the load.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
-                    </li>
-                    <li>
-                        <h3>8. Update the account balance</h3>
+                        <h3>7. Update the account balance</h3>
                         <p>Data Structure/Algorithm used : Segment Tree</p>
-                        <p>We can use segment trees with lazy propagation to update the balance of accounts.Which
+                        <p>Quick and reliable transaction is one of the motive of Visa Cards. Therefore the Account
+                            balance of both the parties has to be updated with the new balance within seconds.So we can
+                            use persistent segment trees to update the balance of accounts.Using segment trees
                             reduces the time to update
                             the balances. We can traverse the data down the tree when the user views the balance.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/segment%20tree.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N) </p>
+                        <p>Space Complexity : O(N) </p>
                     </li>
                     <li>
-                        <h3>9. Improve marketing</h3>
+                        <h3>8. Improve marketing</h3>
                         <p>Data Structure/Algorithm used : Union-Find</p>
                         <p>Visa can use Union-Find to manage groups of users who are connected through various criteria,
                             such as geographical locations, transaction patterns, or membership in loyalty programs.
                             This helps in targeting marketing campaigns more effectively.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Improve_marketing.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N * log N) </p>
+                        <p>Space Complexity : O(N) </p>
                     </li>
                     <li>
-                        <h3>10. Prioritizing transactions based on Card type</h3>
+                        <h3>9. Prioritizing transactions based on Card type</h3>
                         <p>Data Structure/Algorithm used : Max-Heap</p>
-                        <p>Higher ranked cards can be given priority for transaction when there are huge amount of
+                        <p>Visa has a variety of cards, the more premium cards has to be given more priority because
+                            their contribute more to the profit of the company than others and frequency and volume of
+                            the transaction is higher.
+                            Higher ranked cards can be given priority for transaction when there are huge amount of
                             requesting coming.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <p>Challenges : Insertion and deletion operation require rebalancing, which requires a lot of
+                            time.
+                        </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Prioritizing%20transaction%20based%20on%20card.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N * log N) </p>
+                        <p>Space Complexity : O(1) </p>
                     </li>
                     <li>
-                        <h3>11. Network resource utilization</h3>
+                        <h3>10. Network resource utilization</h3>
                         <p>Data Structure/Algorithm used : Ford-Fulkerson</p>
                         <p> A transaction needs to be completed without delay and failures, so the load on server as to
                             be distributed equally. Even if one server fails then the transaction has to be completed by
@@ -171,38 +241,81 @@
                             abstracted as a graph with capacities assigned to the edges. The Max flow algorithm finds
                             the optimal flow path that maximizes throughput at minimum cost. However, the capacities
                             need to be updated dynamically (real-time).</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Network%20resource%20utilization.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(maxFlow * E) </p>
+                        <p>Space Complexity : O(1)</p>
+                    </li>
+                    <li>
+                        <h3>11. Manage server load</h3>
+                        <p>Data Structure/Algorithm used : Kadane's Algorithm</p>
+                        <p>Around 65000 transaction happen every second and the each transaction must be completed
+                            within seconds of their initiation. The time required to get and send data to the servers
+                            contribute to the major time of the whole transaction time. Find from what time to what time
+                            do the most number of transactions happen using Kadane's
+                            Algorithm so that you can optimize the servers to handle the load.</p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Kadane's%20Algorithm%20for%20Maximum%20Subarray%20Sum.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N) </p>
+                        <p>Space Complexity : O(1) </p>
                     </li>
                     <li>
                         <h3>12. Faster transmission of data</h3>
                         <p>Data Structure/Algorithm used : Huffman coding</p>
-                        <p>We can use Huffman coding compression algorithm ,so that the data transmission time
+                        <p>As discussed above the duration of a transaction is very crucial for user for
+                            satisfaction.Hence we can decrease the duration by using Huffman coding compression
+                            algorithm ,so that the data transmission time
                             gets reduced by decreasing the time to transfer the card infrmation between the customer
                             bank server and the merchent bank server.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/Huffman%20coding.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N) </p>
+                        <p>Space Complexity : O(1) </p>
                     </li>
                     <li>
                         <h3>13. Validating a card</h3>
                         <p>Data Structure/Algorithm used : Bloom filter</p>
-                        <p>We can use Bloom filter algorithm for checking if a card is blocked, expired, blacklisted
+                        <p>The transactions must happen only with valid cards and to verify the card we can use Bloom
+                            filter algorithm for checking if a card is blocked, expired, blacklisted
                             before you begin a transaction.If
                             not, then you can continue with transaction else you can cancel the transaction.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/validating%20a%20card.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N)</p>
+                        <p>Space Complexity : O(N) </p>
                     </li>
                     <li>
                         <h3>14. Transmitting information securly</h3>
                         <p>Data Structure/Algorithm used : RSA</p>
-                        <p>We can use algorithms like RSA to send secure information like Card PIN and other data
+                        <p>The data related to the Account and card need to carefuly handled as any leak of information
+                            can cause misuse or these cards. we can use algorithms like RSA to send secure information
+                            like Card PIN and other data
                             between the server and the transacting machine.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <p>Challenges : Has high time complexity</p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/RSA%20encryption.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N^3) </p>
+                        <p>Space Complexity : O(1) </p>
                     </li>
                     <li>
                         <h3>15. Giving offers and rewards</h3>
@@ -211,9 +324,14 @@
                             increase their profit. To make the customers use their cards more frequently we can use a
                             version of Kadane's Algorithm to find the period of the year when they use their card the
                             least and hence give offers during that time period.</p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/giving%20offers%20and%20rewards.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N) </p>
+                        <p>Space Complexity : O(1) </p>
                     </li>
                     <li>
                         <h3>16. Optimizing the data storage in servers</h3>
@@ -223,9 +341,15 @@
                             locations would enchance the chance of a successful and quick transaction. to acheive this
                             we can use KD trees to select the server based on locations where the cards were used
                             historically. </p>
-                        <button type="submit" class="codebtn">View Code</button>
-                        <p>Time Complexity : </p>
-                        <p>Space Complexity : </p>
+                        <p>Challenges : The efficiency decreases as the size of data increases </p>
+                        <!-- <button type="submit" class="codebtn"><a
+                                href="https://github.com/Indudhar-GJ/aps-portfolio/blob/main/codes/optimizing%20data%20storage%20in%20servers.cpp">View
+                                Code</a></button> -->
+                        <button type="submit" class="codebtn"
+                            onclick="window.location.href='CodeViewer.html?file=../codes/Radix tree.cpp'"><a>View
+                                Code</a></button>
+                        <p>Time Complexity : O(N) </p>
+                        <p>Space Complexity : O(N) </p>
                     </li>
                 </ul>
             </div>
@@ -238,6 +362,20 @@
                     helps customers process payments quicker, makes the process smoother for merchants. Overall, these
                     improvements can make the payment
                     experience better for everyone.</p>
+            </div>
+            <div>
+                <h1>Refrences</h1>
+                <p>Wikipedia, "K-d tree," [Online]. Available: https://en.wikipedia.org/wiki/K-d_tree.</p>
+                <p>GeeksforGeeks, "RSA Algorithm in Cryptography," [Online]. Available:
+                    https://www.geeksforgeeks.org/rsa-algorithm-cryptography/.</p>
+                <p>System Design, "Bloom Filters Explained," [Online]. Available:
+                    https://systemdesign.one/bloom-filters-explained/.</p>
+                <p>S. Inc, "Payment Processing Architecture," Medium, 18-Aug-2018. [Online]. Available:
+                    https://medium.com/@sriram.inc/payment-processing-architecture-9651e7292b0c.
+                </p>
+            </div>
+            <div>
+                <pre><code id="code-block"></code></pre>
             </div>
         </div>
     </main>
