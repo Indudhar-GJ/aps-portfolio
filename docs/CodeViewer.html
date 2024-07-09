@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -45,6 +45,47 @@
         } else {
             document.getElementById('code-block').textContent = 'No file specified';
         }
+    </script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Code</title>
+    <style>
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trie Data Structure for Secure Payment Processing</h1>
+    <pre><code id="codeBlock">Loading code...</code></pre>
+
+    <script>
+        fetch('https://raw.githubusercontent.com/Indudhar-GJ/aps-portfolio/main/codes/TrieDataStructureforSecurePaymentProcessing.cpp')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('codeBlock').textContent = data;
+            })
+            .catch(error => {
+                document.getElementById('codeBlock').textContent = 'Error loading code: ' + error;
+            });
     </script>
 </body>
 
