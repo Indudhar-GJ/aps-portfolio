@@ -6,7 +6,7 @@
 <dt>Course Code</dt>
 <dd>23ECSE309</dd>
 <dt>Name</dt>
-<dd>Indudhr G J</dd>
+<dd>Indudhar G J</dd>
 <dt>University</dt>
 <dd>KLE Technological University, Hubballi-31</dd>
 </dl>
